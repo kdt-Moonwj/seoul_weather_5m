@@ -4,8 +4,8 @@ name: Fetch Seoul Weather Data Per 5m
 
 on:
   schedule:
-    - cron:"*/5****"
-  workflow_despatch:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
 jobs:
   fetch_weather_seoul_5m:
     runs-on: ubuntu-latest
